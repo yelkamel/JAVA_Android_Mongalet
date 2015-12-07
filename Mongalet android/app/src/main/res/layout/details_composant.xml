@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/RelativeLayoutDetailCom">
+
+    <include
+        android:id="@+id/include_h"
+        layout="@layout/header" />
+
+    <include
+        android:id="@+id/include_f"
+        layout="@layout/footer" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/type"
+        android:id="@+id/textViewDetType"
+        android:layout_below="@+id/include_h"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewResType"
+        android:layout_above="@+id/textViewResMarq"
+        android:layout_alignLeft="@+id/textViewResMarq"
+        android:layout_alignStart="@+id/textViewResMarq" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/marque"
+        android:id="@+id/textViewDetMarq"
+        android:layout_below="@+id/textViewDetType"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewResMarq"
+        android:layout_alignBaseline="@+id/textViewDetMarq"
+        android:layout_alignBottom="@+id/textViewDetMarq"
+        android:layout_toRightOf="@+id/textViewDetCara"
+        android:layout_toEndOf="@+id/textViewDetCara" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/caracteristique"
+        android:id="@+id/textViewDetCara"
+        android:layout_below="@+id/textViewDetMarq"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewResCara"
+
+        android:layout_alignTop="@+id/textViewDetCara"
+        android:layout_toRightOf="@+id/textViewDetCara"
+        android:layout_toEndOf="@+id/textViewDetCara" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/prix"
+        android:id="@+id/textViewDetPrix"
+        android:layout_below="@+id/textViewDetCara"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewResPrix"
+
+        android:layout_below="@+id/textViewDetCara"
+        android:layout_toRightOf="@+id/textViewDetCara"
+        android:layout_toEndOf="@+id/textViewDetCara" />
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/footer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/footer_background" >
+
+
+    <Button
+        android:id="@+id/boutonAjout1"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/custom_button_transparent"
+        android:focusableInTouchMode="false"
+        android:text="@string/buttonAjoutListAchat"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

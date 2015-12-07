@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/include_h"
+        layout="@layout/header" />
+
+    <include
+        android:id="@+id/include_f"
+        layout="@layout/footer" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/type"
+        android:id="@+id/textView3"
+        android:layout_alignBottom="@+id/editTextType"
+        android:layout_alignLeft="@+id/include_h"
+        android:layout_below="@+id/include_h"
+        android:gravity="center_vertical" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/editTextType"
+        android:layout_below="@+id/include_h"
+        android:layout_toRightOf="@+id/textView5"
+        android:background="@drawable/edittext_custom"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/marque"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/editTextType"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/editTextMarque"
+        android:gravity="center_vertical" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/editTextMarque"
+        android:background="@drawable/edittext_custom"
+        android:layout_below="@+id/textViewChpVideType"
+        android:layout_toRightOf="@+id/textView5"
+        android:layout_alignRight="@+id/editTextType"
+        android:layout_alignEnd="@+id/editTextType" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/caracteristique"
+        android:id="@+id/textView5"
+        android:gravity="center_vertical"
+        android:layout_alignBottom="@+id/editTextCara"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/editTextCara" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/editTextCara"
+        android:background="@drawable/edittext_custom"
+        android:layout_below="@+id/textViewChpVideMarque"
+        android:layout_toRightOf="@+id/textView5"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/champvide"
+        android:id="@+id/textViewChpVideType"
+        android:layout_below="@+id/editTextType"
+        android:layout_alignLeft="@+id/editTextType"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:textColor="@color/border_red"
+        android:layout_alignStart="@+id/editTextType" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/champvide"
+        android:id="@+id/textViewChpVideMarque"
+        android:layout_below="@+id/editTextMarque"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:textColor="@color/border_red"
+        android:layout_toRightOf="@+id/textView5"
+        android:layout_toEndOf="@+id/textView5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/champvide"
+        android:id="@+id/textViewChampVideCar"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:textColor="@color/border_red"
+        android:layout_below="@+id/textView5"
+        android:layout_toRightOf="@+id/textView5"
+        android:layout_toEndOf="@+id/textView5" />
+
+</RelativeLayout>

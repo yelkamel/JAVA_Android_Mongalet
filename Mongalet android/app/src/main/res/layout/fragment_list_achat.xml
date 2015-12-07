@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/include_h"
+        layout="@layout/header" />
+
+    <include
+        android:id="@+id/include_f"
+        layout="@layout/footer" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listViewListAchat"
+        android:layout_alignLeft="@+id/include_h"
+        android:layout_below="@+id/include_h" />
+
+</RelativeLayout>

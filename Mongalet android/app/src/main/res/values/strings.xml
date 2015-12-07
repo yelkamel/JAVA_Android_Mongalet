@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Mongalet</string>
+
+    <string name="nomListeAchat">Ma liste 1</string>
+    <string name="labelNomListe">Nom : </string>
+    <string name="header">Vos listes d\'achat</string>
+    <string name="buttonAjoutListAchat">Nouvelle liste d\'achat</string>
+    <string name="valider">Valider</string>
+    <string name="action_settings">Settings</string>
+    <string name="labelListComp">Liste des composants</string>
+    <string name="type">Type : </string>
+    <string name="marque">Marque : </string>
+    <string name="caracteristique">Caractéristique : </string>
+    <string name="champvide">Merci de renseigner ce champ!</string>
+    <string name="prix">Prix : </string>
+    <string name="prix2">Prix </string>
+    <string name="details">Détails</string>
+    <string name="Quantite">Quantité</string>
+    <string name="valeur">Valeur : </string>
+    <string name="mag">Magasin : </string>
+    <!-- Boutons -->
+    <string name="buttonResume">Résumé</string>
+</resources>

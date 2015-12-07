@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:gravity="center|center_vertical"
+    android:id="@+id/RelativeLayoutListeAchat"
+    android:background="@drawable/custom_listview_achatitem">
+
+    <TextView
+        android:id="@+id/textViewNomCompo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nomListeAchat"
+        android:textSize="14sp"
+        android:gravity="center|center_vertical"
+        android:textColor="@color/white"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    </TextView>
+
+    <EditText
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:id="@+id/quantite"
+
+        android:background="@color/white"
+        android:inputType="number"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/details"
+        android:id="@+id/buttonDetailsComp"
+        android:background="@drawable/custom_button_transparent"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:layout_alignTop="@+id/quantite"
+        android:layout_toLeftOf="@+id/quantite"
+        android:layout_toStartOf="@+id/quantite"
+        android:layout_marginRight="10dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButtonDeleteComp"
+        android:src="@drawable/supprimer"
+        android:background="@drawable/custom_button_transparent"
+        android:layout_alignTop="@+id/buttonDetailsComp"
+        android:layout_toLeftOf="@+id/buttonDetailsComp"
+        android:layout_toStartOf="@+id/buttonDetailsComp"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewInvisible"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/imageButtonDeleteComp"
+        android:layout_toStartOf="@+id/imageButtonDeleteComp" />
+</RelativeLayout>
